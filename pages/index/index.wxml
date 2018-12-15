@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='weather-info'>
+    <view class='city'>{{city}}</view>
+    <image class='weather-icon'src='{{type_img_url}}'/>  
+    <view class='temp'>{{temp}}</view>
+    <view class='center'>{{type}}</view>
+    <view class='center'>{{date}}</view>
+  </view>
+
+  <view class='weatherDetail'>
+    <view class='onethird'>
+      <view class='center '>湿度</view>
+      <view class='b center '>{{humidity}}</view>
+    </view>
+    <view class='l'></view>
+    <view class='onethird'>
+      <view class='center '>日出</view>
+      <view class='b center '>{{sunrise}}</view>
+    </view>
+    <view class='l'></view>
+    <view class='onethird'>
+      <view class='center'>日落</view>
+      <view class='b center'>{{sunset}}</view>
+    </view>
+  </view>
+  <view class='weatherDetail'>
+    <view class='onethird'>
+      <view class='center'>风向</view>
+      <view class='b center'>{{wind_dir}}</view>
+    </view>
+    <view class='l'></view>
+    <view class='onethird'>
+      <view class='center'>风力</view>
+      <view class='b center'>{{wind_level}}</view>
+    </view>
+    <view class='l'></view>
+    <view class='onethird'>
+      <view class='center'>云量</view>
+      <view class='b center'>{{cloud}}</view>
+    </view>
+  </view>
+  <view class='echart'>
+    <ec-canvas id='temps' canvas-id='templine' ec='{{ec}}'/>
+  </view>
+</view>
+

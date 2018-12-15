@@ -1,0 +1,54 @@
+/**index.wxss**/
+/**common**/
+.b{
+  font-weight: bold;
+}
+.l{
+  border: 1rpx solid #fff;
+}
+.center{
+  text-align: center;
+  margin: auto 0;
+}
+.hor{
+  display: flex;
+}
+/**weather-info**/
+.weather-info{
+  text-align: center;
+  flex-direction: column;
+  height: 200px;
+  padding: 20px;
+}
+.weatherDetail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.onethird{
+  width: 33%;
+}
+.city{
+  /*城市信息*/
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+}
+.echart{
+  width: 100%;
+  height: 300px;
+}
+.weather-info .temp{
+  font-size: 30px;
+}
+
+.weather-icon{
+  height: 128px;
+  width: 128px;
+}
